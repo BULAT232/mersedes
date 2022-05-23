@@ -1,0 +1,548 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+/* line 3, D:/проекты/2022/Mersedes/css/style.scss */
+html {
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box; }
+
+/* line 7, D:/проекты/2022/Mersedes/css/style.scss */
+*, *::after,
+*::before {
+		-webkit-box-sizing: inherit;
+		        box-sizing: inherit; }
+
+@font-face {
+		font-family: 'Corporate-A-Bold';
+		font-style: normal;
+		font-weight: 700;
+		src: url("../fonts/SF-Pro-Display-Bold.woff2") format("woff2"), url(../fonts/SF-Pro-Display-Bold.woff) format("woff"); }
+
+/* line 20, D:/проекты/2022/Mersedes/css/style.scss */
+body {
+		background: -webkit-gradient(linear, left top, left bottom, from(#070A1B), to(#2A3170));
+		background: linear-gradient(180deg, #070A1B 0%, #2A3170 100%);
+		font-family: 'Roboto Condensed', sans-serif;
+		background-color: #070A1B;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 120%;
+		color: #fff; }
+
+/* line 30, D:/проекты/2022/Mersedes/css/style.scss */
+a {
+		text-decoration: none;
+		color: inherit; }
+
+/* line 35, D:/проекты/2022/Mersedes/css/style.scss */
+button {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		cursor: pointer; }
+
+/* line 42, D:/проекты/2022/Mersedes/css/style.scss */
+ul {
+		list-style: none; }
+
+/* line 46, D:/проекты/2022/Mersedes/css/style.scss */
+img {
+		max-width: 100%; }
+
+/* line 50, D:/проекты/2022/Mersedes/css/style.scss */
+.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 10px; }
+
+/* line 56, D:/проекты/2022/Mersedes/css/style.scss */
+.header__logo {
+		margin-left: 115px; }
+
+/* line 60, D:/проекты/2022/Mersedes/css/style.scss */
+.header__top {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		height: 100px; }
+
+/* line 67, D:/проекты/2022/Mersedes/css/style.scss */
+.list {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row; }
+
+/* line 72, D:/проекты/2022/Mersedes/css/style.scss */
+.list__item + .list__item {
+		margin-left: 30px; }
+
+/* line 76, D:/проекты/2022/Mersedes/css/style.scss */
+.list__link {
+		width: 40px;
+		height: 40px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		border-radius: 50%;
+		-webkit-transition: background 0.3s linear;
+		transition: background 0.3s linear; }
+
+/* line 87, D:/проекты/2022/Mersedes/css/style.scss */
+.list__link:hover {
+		background-color: #C1A1D2; }
+
+/* line 91, D:/проекты/2022/Mersedes/css/style.scss */
+.header {
+		background-color: #070A1B; }
+
+/* line 95, D:/проекты/2022/Mersedes/css/style.scss */
+.header__content {
+		background-image: url(../img/background-car.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: calc(100vh - 100px);
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+		position: relative; }
+
+/* line 108, D:/проекты/2022/Mersedes/css/style.scss */
+.header__content::before {
+		content: "";
+		background-image: url(../img/logoMers.svg);
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		bottom: -25px;
+		z-index: 2; }
+
+/* line 121, D:/проекты/2022/Mersedes/css/style.scss */
+.title {
+		font-family: 'Corporate-A-Bold';
+		margin-bottom: 5px;
+		font-size: 72px;
+		line-height: 120%;
+		text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+
+/* line 129, D:/проекты/2022/Mersedes/css/style.scss */
+.footer {
+		background-color: #070A1B; }
+
+/* line 133, D:/проекты/2022/Mersedes/css/style.scss */
+.title-descr {
+		font-size: 24px;
+		text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+		margin-bottom: 50px; }
+
+/* line 139, D:/проекты/2022/Mersedes/css/style.scss */
+.footer__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		height: 300px; }
+
+/* line 146, D:/проекты/2022/Mersedes/css/style.scss */
+.concept {
+		padding-top: 150px;
+		margin-bottom: 150px; }
+
+/* line 151, D:/проекты/2022/Mersedes/css/style.scss */
+.concept__inner {
+		max-width: 900px;
+		margin-left: auto; }
+
+/* line 155, D:/проекты/2022/Mersedes/css/style.scss */
+.concept__title {
+		margin-bottom: 25px;
+		text-transform: uppercase;
+		color: #F402A2;
+		font-size: 18px;
+		font-family: 'Corporate-A-Bold'; }
+
+/* line 162, D:/проекты/2022/Mersedes/css/style.scss */
+.section__title {
+		margin-bottom: 25px;
+		text-transform: uppercase;
+		color: #F402A2;
+		font-size: 18px;
+		font-family: 'Corporate-A-Bold'; }
+
+/* line 169, D:/проекты/2022/Mersedes/css/style.scss */
+.concept__text {
+		font-size: 24px;
+		margin-bottom: 25px;
+		line-height: 120%; }
+
+/* premier */
+/* line 180, D:/проекты/2022/Mersedes/css/style.scss */
+.premier {
+		margin-bottom: 150px; }
+
+/* line 185, D:/проекты/2022/Mersedes/css/style.scss */
+.premier__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		gap: 60px; }
+
+/* line 190, D:/проекты/2022/Mersedes/css/style.scss */
+.premier__text {
+		margin-bottom: 21px; }
+
+/* line 195, D:/проекты/2022/Mersedes/css/style.scss */
+.premier__img {
+		margin-bottom: 20px; }
+
+/* line 199, D:/проекты/2022/Mersedes/css/style.scss */
+.premier__btn {
+		display: block;
+		border: 1px solid #F402A2;
+		color: #F402A2;
+		font-size: 18px;
+		line-height: 120%;
+		text-transform: uppercase;
+		font-weight: 700;
+		width: 100%;
+		padding: 14px;
+		text-align: center;
+		font-family: 'Corporate-A-Bold';
+		-webkit-transition: border 0.3s linear, color .3s linear;
+		transition: border 0.3s linear, color .3s linear; }
+
+/* line 215, D:/проекты/2022/Mersedes/css/style.scss */
+.premier__btn:hover {
+		border-color: #53A1CB;
+		color: #53A1CB; }
+
+/* line 220, D:/проекты/2022/Mersedes/css/style.scss */
+.video {
+		margin-bottom: 150px; }
+
+/* line 225, D:/проекты/2022/Mersedes/css/style.scss */
+.video__img {
+		margin-bottom: 25px; }
+
+/* line 229, D:/проекты/2022/Mersedes/css/style.scss */
+.video__btn svg {
+		vertical-align: center; }
+
+/* line 233, D:/проекты/2022/Mersedes/css/style.scss */
+.video__btn {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
+		gap: 10px;
+		width: 100%;
+		border: 1px solid #F402A2;
+		color: #F402A2;
+		font-size: 18px;
+		line-height: 120%;
+		text-transform: uppercase;
+		padding: 14px;
+		font-family: 'Corporate-A-Bold';
+		-webkit-transition: border 0.3s linear, color .3s linear;
+		transition: border 0.3s linear, color .3s linear; }
+
+/* line 250, D:/проекты/2022/Mersedes/css/style.scss */
+.video__btn span {
+		padding-top: 2px; }
+
+/* line 254, D:/проекты/2022/Mersedes/css/style.scss */
+.video__btn path {
+		-webkit-transition: fill .3s linear;
+		transition: fill .3s linear; }
+
+/* line 258, D:/проекты/2022/Mersedes/css/style.scss */
+.video__btn:hover {
+		border-color: #53A1CB;
+		color: #53A1CB; }
+		/* line 261, D:/проекты/2022/Mersedes/css/style.scss */
+		.video__btn:hover path {
+				fill: #53A1CB; }
+
+/* line 266, D:/проекты/2022/Mersedes/css/style.scss */
+.design {
+		overflow: hidden; }
+
+/* line 270, D:/проекты/2022/Mersedes/css/style.scss */
+.design__interior {
+		margin-bottom: 100px;
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: 255px 44px 255px 44px auto 44px 330px;
+		grid-template-columns: 255px 255px auto 330px;
+		-ms-grid-rows: auto 14px auto;
+		grid-template-rows: auto auto;
+		gap: 14px 44px; }
+.design__interior > *:nth-child(1) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1; }
+.design__interior > *:nth-child(2) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 3; }
+.design__interior > *:nth-child(3) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 5; }
+.design__interior > *:nth-child(4) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 7; }
+.design__interior > *:nth-child(5) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1; }
+.design__interior > *:nth-child(6) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 3; }
+.design__interior > *:nth-child(7) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 5; }
+.design__interior > *:nth-child(8) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 7; }
+
+/* line 278, D:/проекты/2022/Mersedes/css/style.scss */
+.design__cell-one {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 2;
+		grid-row: 1/3; }
+
+/* line 282, D:/проекты/2022/Mersedes/css/style.scss */
+.design__cell-two {
+		-ms-grid-row-span: -1;
+		grid-row-end: -1;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: end;
+		    -ms-flex-align: end;
+		        align-items: flex-end; }
+
+/* line 287, D:/проекты/2022/Mersedes/css/style.scss */
+.design__cell-three {
+		-ms-grid-column-span: -1;
+		grid-column-end: -1;
+		-ms-grid-row-span: -1;
+		grid-row-end: -1;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: end;
+		    -ms-flex-align: end;
+		        align-items: flex-end; }
+
+/* line 294, D:/проекты/2022/Mersedes/css/style.scss */
+.design__cell-text {
+		margin-bottom: 15px; }
+
+/* line 298, D:/проекты/2022/Mersedes/css/style.scss */
+.design__slider-img {
+		margin: 0 30px; }
+
+/* line 301, D:/проекты/2022/Mersedes/css/style.scss */
+.slick-track {
+		margin-left: -30px; }
+
+/* line 304, D:/проекты/2022/Mersedes/css/style.scss */
+.design-slider {
+		padding-bottom: 25px;
+		position: relative; }
+
+/* line 308, D:/проекты/2022/Mersedes/css/style.scss */
+.arrow {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		z-index: 1000;
+		cursor: pointer; }
+
+/* line 316, D:/проекты/2022/Mersedes/css/style.scss */
+.arrow-left {
+		-webkit-transform: translateX(30px);
+		        transform: translateX(30px); }
+
+/* line 319, D:/проекты/2022/Mersedes/css/style.scss */
+.arrow-right {
+		-webkit-transform: translateX(-80px);
+		        transform: translateX(-80px); }
+
+/* line 322, D:/проекты/2022/Mersedes/css/style.scss */
+.design__box {
+		max-width: 590px;
+		margin: 150px auto;
+		padding: 0 10px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		gap: 60px; }
+
+/* line 330, D:/проекты/2022/Mersedes/css/style.scss */
+.design__box-column {
+		width: 255px; }
+
+/* line 334, D:/проекты/2022/Mersedes/css/style.scss */
+.design__interior-img {
+		grid-column: 2 / -1; }
+
+/* line 338, D:/проекты/2022/Mersedes/css/style.scss */
+.design__box-text {
+		margin-bottom: 15px; }
+
+/* line 342, D:/проекты/2022/Mersedes/css/style.scss */
+.design__img {
+		max-width: 100%;
+		display: block;
+		-o-object-fit: cover;
+		   object-fit: cover;
+		margin: 0 auto; }
+
+@media (max-width: 1200px) {
+		/* line 350, D:/проекты/2022/Mersedes/css/style.scss */
+		.design__interior {
+				display: block; }
+		/* line 353, D:/проекты/2022/Mersedes/css/style.scss */
+		.design__interior-img {
+				width: 100%;
+				margin-bottom: 25px; }
+		/* line 357, D:/проекты/2022/Mersedes/css/style.scss */
+		.design__cell-three .design__interior-img {
+				max-width: 100%;
+				width: auto; } }
+
+@media (max-width: 1020px) {
+		/* line 364, D:/проекты/2022/Mersedes/css/style.scss */
+		.footer__inner {
+				height: 150px; } }
+
+@media (max-width: 768px) {
+		/* line 370, D:/проекты/2022/Mersedes/css/style.scss */
+		.header__logo {
+				margin-left: 0; }
+		/* line 373, D:/проекты/2022/Mersedes/css/style.scss */
+		.Logo__img {
+				width: 180px; }
+		/* line 376, D:/проекты/2022/Mersedes/css/style.scss */
+		.list__item + .list__item {
+				margin-left: 15px; }
+		/* line 379, D:/проекты/2022/Mersedes/css/style.scss */
+		.list__link {
+				width: 35px;
+				height: 35px; }
+		/* line 383, D:/проекты/2022/Mersedes/css/style.scss */
+		.title {
+				font-size: 55px; }
+		/* line 386, D:/проекты/2022/Mersedes/css/style.scss */
+		.title-descr {
+				font-size: 18px; }
+		/* line 389, D:/проекты/2022/Mersedes/css/style.scss */
+		.concept {
+				padding-top: 75px;
+				margin-bottom: 75px; }
+		/* line 393, D:/проекты/2022/Mersedes/css/style.scss */
+		.concept__text {
+				font-size: 16px; }
+		/* line 396, D:/проекты/2022/Mersedes/css/style.scss */
+		.premier__inner {
+				display: block; }
+		/* line 399, D:/проекты/2022/Mersedes/css/style.scss */
+		.premier, .video {
+				margin-bottom: 75px; }
+		/* line 402, D:/проекты/2022/Mersedes/css/style.scss */
+		.premier__img {
+				width: 100%;
+				margin-top: 25px; }
+		/* line 407, D:/проекты/2022/Mersedes/css/style.scss */
+		.design__box {
+				margin: 75px auto;
+				display: block; }
+		/* line 411, D:/проекты/2022/Mersedes/css/style.scss */
+		.design__box-column {
+				width: 100%; } }
+
+@media (max-width: 620px) {
+		/* line 417, D:/проекты/2022/Mersedes/css/style.scss */
+		.footer__inner {
+				-ms-flex-wrap: wrap;
+				    flex-wrap: wrap;
+				-ms-flex-line-pack: center;
+				    align-content: center; }
+		/* line 421, D:/проекты/2022/Mersedes/css/style.scss */
+		.flex .list {
+				width: 100%;
+				margin-top: 25px;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center; } }
+
+@media (max-width: 520px) {
+		/* line 429, D:/проекты/2022/Mersedes/css/style.scss */
+		.header__top {
+				-ms-flex-wrap: wrap;
+				    flex-wrap: wrap;
+				-ms-flex-line-pack: center;
+				    align-content: center; }
+		/* line 434, D:/проекты/2022/Mersedes/css/style.scss */
+		.footer__inner {
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+				padding-top: 10px; }
+		/* line 439, D:/проекты/2022/Mersedes/css/style.scss */
+		.list {
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				padding-top: 0px;
+				width: 100%; }
+		/* line 445, D:/проекты/2022/Mersedes/css/style.scss */
+		.title {
+				font-size: 34px; } }
+
+@media (max-width: 360px) {
+		/* line 451, D:/проекты/2022/Mersedes/css/style.scss */
+		.design__slider-img {
+				margin: 0; }
+		/* line 454, D:/проекты/2022/Mersedes/css/style.scss */
+		.slick-track {
+				margin-left: 0; } }
+/*# sourceMappingURL=style.css.map */
